@@ -7,7 +7,15 @@ A collaborative personal portfolio website created by **Group 2** for our **RVA 
 ---
 
 ## 🌐 Live Demo
-* **GitHub Pages URL:** `[Insert your GitHub Pages link here once deployed, e.g., https://username.github.io/five-different-stories/]`
+* **Local preview:** Open `Index.html` in a browser.
+* **GitHub Pages:** Publish the repository and add its URL here.
+
+## 🧩 Project Files
+* `Index.html`, `Members.html`, `Skills.html`, `works.html`, `AboutUs.html`, and `ContactUs.html` contain the six portfolio pages.
+* `global.css` contains the shared layout, color palette, and responsive styles.
+* `script.js` contains the shared mobile navigation and current-year behavior.
+
+The site uses plain HTML, CSS, and JavaScript and does not require a build step.
 
 ---
 
@@ -42,5 +50,8 @@ While we work together as a single team, each of us brings a distinct background
 | **Julie Lian Rubio** | Research & Content |
 | **Kate Nicole De Vera** | About Us & Documentation |
 | **Ryan Harold Tabios** | Our Works & Presentation Preparation |
+
+## 📝 Content To Finalize
+The planning files did not include member photos or personal bios, individual project examples, or public contact details. Add only information each member has approved before publishing those sections.
 
 ---
