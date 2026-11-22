@@ -28,3 +28,63 @@ if (menuToggle && siteNavigation) {
     }
   });
 }
+
+document.querySelectorAll(".design-panel").forEach((panel) => {
+  const termButtons = panel.querySelectorAll(".design-term");
+  const description = panel.querySelector("[data-term-description]");
+  const sourceLink = panel.querySelector("[data-term-source]");
+
+  if (!description || !(sourceLink instanceof HTMLAnchorElement)) {
+    return;
+  }
+
+  termButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      termButtons.forEach((termButton) => {
+        termButton.setAttribute("aria-pressed", String(termButton === button));
+      });
+
+      description.textContent = button.dataset.description || "";
+      sourceLink.href = button.dataset.source || "";
+      sourceLink.hidden = false;
+    });
+  });
+});
+
+const contactForm = document.querySelector("[data-contact-form]");
+const contactModal = document.querySelector("[data-contact-modal]");
+const contactName = contactModal?.querySelector("[data-contact-name]");
+const contactSubmit = contactForm?.querySelector('button[type="submit"]');
+
+if (
+  contactForm instanceof HTMLFormElement &&
+  contactModal instanceof HTMLDialogElement &&
+  contactName instanceof HTMLElement &&
+  contactSubmit instanceof HTMLButtonElement
+) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) {
+      return;
+    }
+
+    const name = new FormData(contactForm).get("name");
+    contactName.textContent = typeof name === "string" ? name.trim() : "";
+    contactModal.showModal();
+  });
+
+  contactSubmit.disabled = false;
+
+  contactModal.querySelectorAll("[data-contact-modal-close]").forEach((closeButton) => {
+    closeButton.addEventListener("click", () => contactModal.close());
+  });
+
+  contactModal.addEventListener("click", (event) => {
+    if (event.target === contactModal) {
+      contactModal.close();
+    }
+  });
+
+  contactModal.addEventListener("close", () => contactSubmit.focus());
+}

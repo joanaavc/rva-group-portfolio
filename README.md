@@ -1,57 +1,40 @@
 # Five Different Stories
 
-> *"Five Students, Different Talents, One Shared Journey."*
+> Five students, different talents, one shared journey.
 
-A collaborative personal portfolio website created by **Group 2** for our **RVA Summative Assessment 2: Digital Interface Design Project**. This web interface highlights our individual identities, creative strengths, technical skills, and shared academic journey.
+A responsive student portfolio created by Group 2 for the RVA Summative Assessment 2 digital interface design project. The site introduces our team, explains our project roles and design ideas, and brings our group projects and individual artworks together.
 
----
+## Preview
 
-## 🌐 Live Demo
-* **Local preview:** Open `Index.html` in a browser.
-* **GitHub Pages:** Publish the repository and add its URL here.
+Open `Index.html` in a browser to explore the site. It uses plain HTML, CSS, and JavaScript and does not need a package install or build step. The Canva and Figma previews need an internet connection; each section also includes a link to open its project directly.
 
-## 🧩 Project Files
-* `Index.html`, `Members.html`, `Skills.html`, `works.html`, `AboutUs.html`, and `ContactUs.html` contain the six portfolio pages.
-* `global.css` contains the shared layout, color palette, and responsive styles.
-* `script.js` contains the shared mobile navigation and current-year behavior.
+## Pages
 
-The site uses plain HTML, CSS, and JavaScript and does not require a build step.
+- **Home** (`Index.html`): Introduces the team and links to the main sections.
+- **Members** (`Members.html`): Shows each member's project role and portfolio link.
+- **Skills** (`Skills.html`): Summarizes team contributions and provides an interactive glossary of art elements and design principles.
+- **Works** (`works.html`): Embeds the group presentation and website prototype, then displays individual artwork galleries.
+- **About** (`AboutUs.html`): Explains the idea behind the team name and summarizes the project journey.
+- **Contact** (`ContactUs.html`): Includes a required-field message form with a local confirmation modal, plus the members' public social profiles and email links. The static form does not send or store submissions.
 
----
+## Project files
 
-## 📖 Project Overview
-**Theme:** Personal Portfolio Website  
+- `global.css` contains the shared visual styles, page layouts, and responsive rules.
+- `script.js` controls the mobile navigation, interactive glossary, and current-year footer text.
+- `Assets/` contains the member portraits, individual artwork, and supporting project documents.
 
-While we work together as a single team, each of us brings a distinct background, personality, and skill set to the table. **Five Different Stories** serves as a digital space to introduce our members, showcase both individual and group works, and apply core **Elements of Art** (line, color, texture, space, form/shape, perspective) and **Principles of Design** (balance, rhythm, emphasis, harmony, proportion).
+Keep the capitalization and spelling of file and asset paths unchanged, especially when publishing on a case-sensitive host.
 
----
+## Design direction
 
-## 🗂️ Website Sections
-* **Homepage:** Welcomes visitors and introduces the concept behind *Five Different Stories*.
-* **Our Members:** Introduces the five group members with photos and personal profiles.
-* **Our Skills:** Highlights each member's unique talents, creative interests, and technical abilities.
-* **Our Works:** Showcases completed individual and collaborative projects and activities.
-* **About Us:** Shares the story of how Group 2 came together, our shared experiences, and our goals as students.
-* **Contact Us:** Provides social media links and ways for visitors to connect with us.
+The visual identity combines navy, cream, and soft orange with a clean, editorial layout. The pages use space, contrast, balance, and repetition to keep the portfolio cohesive while giving each member's work room to stand out.
 
----
+## Team roles
 
-## 🎨 Design Concept & Visual Identity
-* **Color Palette:** Navy Blue, Cream, and Soft Orange — chosen to create visual harmony, strong contrast for readability, and a warm, welcoming aesthetic.
-* **Typography & Layout:** Clean, easy-to-read fonts paired with structured layouts, custom icons, shapes, and member photography to guide visitor navigation smoothly.
-
----
-
-## 👥 Group 2 Members & Roles
-| Name | Role / Assigned Tasks |
+| Member | Project role |
 | :--- | :--- |
-| **Joana Crisha Ayop** *(Group Leader)* | Group Coordination & Homepage |
-| **Whendelyn Bangis** | Website Layout & Design |
-| **Julie Lian Rubio** | Research & Content |
-| **Kate Nicole De Vera** | About Us & Documentation |
-| **Ryan Harold Tabios** | Our Works & Presentation Preparation |
-
-## 📝 Content To Finalize
-The planning files did not include member photos or personal bios, individual project examples, or public contact details. Add only information each member has approved before publishing those sections.
-
----
+| **Joana Crisha Ayop** | Group coordination and homepage |
+| **Whendelyn Bangis** | Website layout and design |
+| **Julie Lian Rubio** | Research and content |
+| **Kate Nicole De Vera** | About Us and documentation |
+| **Ryan Harold Tabios** | Our Works and presentation preparation |
