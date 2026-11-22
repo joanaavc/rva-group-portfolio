@@ -6,11 +6,11 @@ A responsive student portfolio created by Group 2 for the RVA Summative Assessme
 
 ## Preview
 
-Open `Index.html` in a browser to explore the site. It uses plain HTML, CSS, and JavaScript and does not need a package install or build step. The Canva and Figma previews need an internet connection; each section also includes a link to open its project directly.
+Open `index.html` in a browser to explore the site. It uses plain HTML, CSS, and JavaScript and does not need a package install or build step. The Canva and Figma previews need an internet connection; each section also includes a link to open its project directly.
 
 ## Pages
 
-- **Home** (`Index.html`): Introduces the team and links to the main sections.
+- **Home** (`index.html`): Introduces the team and links to the main sections.
 - **Members** (`Members.html`): Shows each member's project role and portfolio link.
 - **Skills** (`Skills.html`): Summarizes team contributions and provides an interactive glossary of art elements and design principles.
 - **Works** (`works.html`): Embeds the group presentation and website prototype, then displays individual artwork galleries.
@@ -24,6 +24,10 @@ Open `Index.html` in a browser to explore the site. It uses plain HTML, CSS, and
 - `Assets/` contains the member portraits, individual artwork, and supporting project documents.
 
 Keep the capitalization and spelling of file and asset paths unchanged, especially when publishing on a case-sensitive host.
+
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/pages.yml` publishes the site from the repository root whenever changes are pushed to `main`. In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. The first deployment can then be started by pushing this workflow to `main` or running it manually from the **Actions** tab.
 
 ## Design direction
 
