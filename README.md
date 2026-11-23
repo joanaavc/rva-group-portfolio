@@ -13,14 +13,14 @@ Open `index.html` in a browser to explore the site. It uses plain HTML, CSS, and
 - **Home** (`index.html`): Introduces the team and links to the main sections.
 - **Members** (`Members.html`): Shows each member's project role and portfolio link.
 - **Skills** (`Skills.html`): Summarizes team contributions and provides an interactive glossary of art elements and design principles.
-- **Works** (`works.html`): Embeds the group presentation and website prototype, then displays individual artwork galleries.
+- **Works** (`works.html`): Embeds the group presentation, the BarberQ and website Figma prototypes, and individual artwork galleries with a click-to-enlarge viewer.
 - **About** (`AboutUs.html`): Explains the idea behind the team name and summarizes the project journey.
 - **Contact** (`ContactUs.html`): Includes a required-field message form with a local confirmation modal, plus the members' public social profiles and email links. The static form does not send or store submissions.
 
 ## Project files
 
 - `global.css` contains the shared visual styles, page layouts, and responsive rules.
-- `script.js` controls the mobile navigation, interactive glossary, and current-year footer text.
+- `script.js` controls the mobile navigation, interactive glossary, local contact-form confirmation, artwork viewer, and current-year footer text.
 - `Assets/` contains the member portraits, individual artwork, and supporting project documents.
 
 Keep the capitalization and spelling of file and asset paths unchanged, especially when publishing on a case-sensitive host.
@@ -35,10 +35,10 @@ The visual identity combines navy, cream, and soft orange with a clean, editoria
 
 ## Team roles
 
-| Member | Project role |
-| :--- | :--- |
-| **Joana Crisha Ayop** | Group coordination and homepage |
-| **Whendelyn Bangis** | Website layout and design |
-| **Julie Lian Rubio** | Research and content |
-| **Kate Nicole De Vera** | About Us and documentation |
-| **Ryan Harold Tabios** | Our Works and presentation preparation |
+| Member                  | Project role                           |
+| :---------------------- | :------------------------------------- |
+| **Joana Crisha Ayop**   | Group coordination and homepage        |
+| **Whendelyn Bangis**    | Website layout and design              |
+| **Kate Nicole De Vera** | About Us and documentation             |
+| **Julie Lian Rubio**    | Research and content                   |
+| **Ryan Harold Tabios**  | Our Works and presentation preparation |

@@ -1,97 +1,404 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Discover Group 2's project contributions and the elements and principles of design behind the portfolio.">
-  <title>Our Skills | Five Different Stories</title>
-  <link rel="stylesheet" href="global.css">
-  <script src="script.js" defer></script>
-</head>
-<body data-page="skills">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="header-inner">
-    <a class="brand" href="index.html" aria-label="Five Different Stories home"><img class="brand-mark" src="Assets/logo.png" alt="" aria-hidden="true"><span class="brand-copy"><strong>Five Different Stories</strong><small>GROUP 2 PORTFOLIO</small></span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-toggle-label">Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
-    <nav class="site-nav" id="site-navigation" aria-label="Main navigation"><a href="index.html" data-nav="home">Home</a><a href="Members.html" data-nav="members">Members</a><a href="Skills.html" data-nav="skills">Skills</a><a href="works.html" data-nav="works">Works</a><a href="AboutUs.html" data-nav="about">About</a><a class="nav-contact" href="ContactUs.html" data-nav="contact">Contact <span aria-hidden="true">↗</span></a></nav>
-  </div></header>
-  <main id="main">
-    <section class="page-hero page-shell">
-      <p class="eyebrow"><span class="eyebrow-dot"></span> WHAT WE BRING TO THE TABLE</p>
-      <h1>Many ways<br><span>to make.</span></h1>
-      <p class="page-lede">Our project brings together coordination, visual design, research, writing, documentation, and presentation preparation. We are also exploring the elements of art and principles of design that shape our portfolio.</p>
-      <span class="page-number" aria-hidden="true">02 — PRACTICE</span>
-    </section>
-    <section class="contributions-section page-shell section-pad">
-      <div class="section-heading"><div><p class="eyebrow">OUR CONTRIBUTIONS</p><h2>Each part matters.</h2></div><p>These are the responsibilities listed in our project plan, brought together to move one shared idea forward.</p></div>
-      <div class="contribution-list">
-        <article class="contribution-row">
-          <span class="contribution-number">01</span>
-          <details class="contribution-details">
-            <summary><div><h3>Coordination &amp; homepage</h3><p>Joana Crisha Ayop · Group leader</p></div><span class="details-toggle" aria-hidden="true">+</span></summary>
-            <ul class="additional-skills"><li>UI/UX Design (Mobile &amp; Desktop)</li><li>Requirement Gathering</li><li>Database &amp; ERD / Schema Design (PostgreSQL/Supabase, MySQL)</li><li>Basic SQL</li><li>HTML, CSS, JavaScript</li><li>Python</li><li>Git &amp; GitHub</li><li>Figma</li><li>draw.io &amp; PlantUML</li><li>Research, Communication, Leadership &amp; Collaboration</li><li>Google Workspace &amp; Microsoft Office</li></ul>
-          </details>
-        </article>
-        <article class="contribution-row">
-          <span class="contribution-number">02</span>
-          <details class="contribution-details">
-            <summary><div><h3>Website layout &amp; design</h3><p>Whendelyn Bangis</p></div><span class="details-toggle" aria-hidden="true">+</span></summary>
-            <ul class="additional-skills"><li>Communication Skills</li><li>Time Management</li><li>Active Listening</li><li>Creativity</li><li>Teamwork</li><li>UI/UX Design</li><li>Fast Learner</li><li>Proficient in Microsoft Excel</li></ul>
-          </details>
-        </article>
-        <article class="contribution-row">
-          <span class="contribution-number">03</span>
-          <details class="contribution-details">
-            <summary><div><h3>Research &amp; content</h3><p>Julie Lian Rubio</p></div><span class="details-toggle" aria-hidden="true">+</span></summary>
-            <ul class="additional-skills"><li>Communication Skills</li><li>Critical Thinking</li><li>Problem-Solving</li><li>Creativity and Innovation</li><li>Time Management</li><li>Adaptability</li><li>Teamwork and Collaboration</li><li>Attention to Detail</li><li>Self-Motivation</li><li>Continuous Learning</li><li>Computer Literacy</li><li>Microsoft Office (Word, Excel, and PowerPoint)</li><li>C++ Programming (Basic)</li><li>Basic Website Development</li><li>File Management and Organization</li><li>Internet Navigation and Online Research</li></ul>
-          </details>
-        </article>
-        <article class="contribution-row">
-          <span class="contribution-number">04</span>
-          <details class="contribution-details">
-            <summary><div><h3>About Us &amp; documentation</h3><p>Kate Nicole De Vera</p></div><span class="details-toggle" aria-hidden="true">+</span></summary>
-            <ul class="additional-skills"><li>Time management</li><li>Teamwork and discipline</li><li>Organization</li><li>Multitasking</li><li>Communication</li></ul>
-          </details>
-        </article>
-        <article class="contribution-row">
-          <span class="contribution-number">05</span>
-          <details class="contribution-details">
-            <summary><div><h3>Our Works &amp; presentation</h3><p>Ryan Harold Tabios</p></div><span class="details-toggle" aria-hidden="true">+</span></summary>
-            <ul class="additional-skills"><li>HTML5</li><li>CSS3</li><li>Responsive Design</li><li>UI/UX</li><li>Git/GitHub</li><li>Basic SQL</li><li>Python</li><li>System Analysis &amp; Design</li><li>Leadership</li><li>Teamwork</li><li>Communication</li></ul>
-          </details>
-        </article>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover Group 2's project contributions and the elements and principles of design behind the portfolio."
+    />
+    <title>Our Skills | Five Different Stories</title>
+    <link rel="stylesheet" href="global.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="skills">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Five Different Stories home"
+          ><img
+            class="brand-mark"
+            src="Assets/logo.png"
+            alt=""
+            aria-hidden="true"
+          /><span class="brand-copy"
+            ><strong>Five Different Stories</strong
+            ><small>GROUP 2 PORTFOLIO</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          <span class="menu-toggle-label">Menu</span
+          ><span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html" data-nav="home">Home</a
+          ><a href="Members.html" data-nav="members">Members</a
+          ><a href="Skills.html" data-nav="skills">Skills</a
+          ><a href="works.html" data-nav="works">Works</a
+          ><a href="AboutUs.html" data-nav="about">About</a
+          ><a class="nav-contact" href="ContactUs.html" data-nav="contact"
+            >Contact <span aria-hidden="true">↗</span></a
+          >
+        </nav>
       </div>
-      <p class="content-note"><span aria-hidden="true">✳</span> These are project assignments, not a ranking of individual abilities. Select each member's row to view their additional skills.</p>
-    </section>
-    <section class="design-section"><div class="page-shell section-pad">
-      <div class="section-heading"><div><p class="eyebrow">OUR DESIGN TOOLKIT</p><h2>Art meets intention.</h2></div><p>Select a term to see its description. Choose another term to replace it, or follow the source link to learn more.</p></div>
-      <div class="design-columns">
-        <article class="design-panel art-elements">
-          <p class="eyebrow">ELEMENTS OF ART</p><h3>What we work with.</h3>
-          <div class="design-token-grid">
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="elements-description" data-description="A mark or path that can vary in direction, length, and thickness, and can guide the viewer's eye through a composition." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#line">Line</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="elements-description" data-description="An element of art described by hue, value (lightness or darkness), and intensity (brightness or dullness)." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#color">Color</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="elements-description" data-description="The actual or suggested surface quality of an object, such as smooth, rough, soft, or hard." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#texture">Texture</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="elements-description" data-description="The area within, around, and between objects; artists use positive and negative space to shape a composition and suggest depth." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#space">Space</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="elements-description" data-description="Shape has height and width; form adds depth, making an object appear or exist in three dimensions." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#shape_and_form">Form &amp; shape</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="elements-description" data-description="A way of representing depth and distance on a flat surface, helping a two-dimensional image suggest three-dimensional space." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#space">Perspective</button>
+    </header>
+    <main id="main">
+      <section class="page-hero page-shell">
+        <p class="eyebrow">
+          <span class="eyebrow-dot"></span> WHAT WE BRING TO THE TABLE
+        </p>
+        <h1>Many ways<br /><span>to make.</span></h1>
+        <p class="page-lede">
+          Our project brings together coordination, visual design, research,
+          writing, documentation, and presentation preparation. We are also
+          exploring the elements of art and principles of design that shape our
+          portfolio.
+        </p>
+        <span class="page-number" aria-hidden="true">02 — PRACTICE</span>
+      </section>
+      <section class="contributions-section page-shell section-pad">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">OUR CONTRIBUTIONS</p>
+            <h2>Each part matters.</h2>
           </div>
-          <div class="design-description" id="elements-description" aria-live="polite"><p><em data-term-description>Select an element above to read its description.</em></p><a data-term-source href="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html" target="_blank" rel="noopener noreferrer" hidden>Study source ↗</a></div>
-        </article>
-        <article class="design-panel design-principles">
-          <p class="eyebrow">PRINCIPLES OF DESIGN</p><h3>How we bring it together.</h3>
-          <div class="design-token-grid">
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="principles-description" data-description="The distribution of visual weight in a composition, helping it feel stable or intentionally dynamic." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html#balance">Balance</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="principles-description" data-description="A visual beat created by repeating or varying elements, which can lead the viewer's eye through a work." data-source="https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf">Rhythm</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="principles-description" data-description="The area that attracts attention, often made prominent through contrast in size, color, shape, or position." data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html#emphasis">Emphasis</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="principles-description" data-description="A sense of unity created when visual elements relate well and feel like parts of the same composition." data-source="https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf">Harmony</button>
-            <button class="design-term" type="button" aria-pressed="false" aria-controls="principles-description" data-description="The relative size of parts in relation to one another and to the whole composition." data-source="https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf">Proportion</button>
+          <p>
+            These are the responsibilities listed in our project plan, brought
+            together to move one shared idea forward.
+          </p>
+        </div>
+        <div class="contribution-list">
+          <article class="contribution-row">
+            <span class="contribution-number">01</span>
+            <details class="contribution-details">
+              <summary>
+                <div>
+                  <h3>Coordination &amp; homepage</h3>
+                  <p>Joana Crisha Ayop · Group leader</p>
+                </div>
+                <span class="details-toggle" aria-hidden="true">+</span>
+              </summary>
+              <ul class="additional-skills">
+                <li>UI/UX Design (Mobile &amp; Desktop)</li>
+                <li>Requirement Gathering</li>
+                <li>
+                  Database &amp; ERD / Schema Design (PostgreSQL/Supabase,
+                  MySQL)
+                </li>
+                <li>Basic SQL</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>Git &amp; GitHub</li>
+                <li>Figma</li>
+                <li>draw.io &amp; PlantUML</li>
+                <li>Research, Communication, Leadership &amp; Collaboration</li>
+                <li>Google Workspace &amp; Microsoft Office</li>
+              </ul>
+            </details>
+          </article>
+          <article class="contribution-row">
+            <span class="contribution-number">02</span>
+            <details class="contribution-details">
+              <summary>
+                <div>
+                  <h3>Website layout &amp; design</h3>
+                  <p>Whendelyn Bangis</p>
+                </div>
+                <span class="details-toggle" aria-hidden="true">+</span>
+              </summary>
+              <ul class="additional-skills">
+                <li>Communication Skills</li>
+                <li>Time Management</li>
+                <li>Active Listening</li>
+                <li>Creativity</li>
+                <li>Teamwork</li>
+                <li>UI/UX Design</li>
+                <li>Fast Learner</li>
+                <li>Proficient in Microsoft Excel</li>
+              </ul>
+            </details>
+          </article>
+          <article class="contribution-row">
+            <span class="contribution-number">03</span>
+            <details class="contribution-details">
+              <summary>
+                <div>
+                  <h3>About Us &amp; documentation</h3>
+                  <p>Kate Nicole De Vera</p>
+                </div>
+                <span class="details-toggle" aria-hidden="true">+</span>
+              </summary>
+              <ul class="additional-skills">
+                <li>Time management</li>
+                <li>Teamwork and discipline</li>
+                <li>Organization</li>
+                <li>Multitasking</li>
+                <li>Communication</li>
+              </ul>
+            </details>
+          </article>
+          <article class="contribution-row">
+            <span class="contribution-number">04</span>
+            <details class="contribution-details">
+              <summary>
+                <div>
+                  <h3>Research &amp; content</h3>
+                  <p>Julie Lian Rubio</p>
+                </div>
+                <span class="details-toggle" aria-hidden="true">+</span>
+              </summary>
+              <ul class="additional-skills">
+                <li>Communication Skills</li>
+                <li>Critical Thinking</li>
+                <li>Problem-Solving</li>
+                <li>Creativity and Innovation</li>
+                <li>Time Management</li>
+                <li>Adaptability</li>
+                <li>Teamwork and Collaboration</li>
+                <li>Attention to Detail</li>
+                <li>Self-Motivation</li>
+                <li>Continuous Learning</li>
+                <li>Computer Literacy</li>
+                <li>Microsoft Office (Word, Excel, and PowerPoint)</li>
+                <li>C++ Programming (Basic)</li>
+                <li>Basic Website Development</li>
+                <li>File Management and Organization</li>
+                <li>Internet Navigation and Online Research</li>
+              </ul>
+            </details>
+          </article>
+          <article class="contribution-row">
+            <span class="contribution-number">05</span>
+            <details class="contribution-details">
+              <summary>
+                <div>
+                  <h3>Our Works &amp; presentation</h3>
+                  <p>Ryan Harold Tabios</p>
+                </div>
+                <span class="details-toggle" aria-hidden="true">+</span>
+              </summary>
+              <ul class="additional-skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive Design</li>
+                <li>UI/UX</li>
+                <li>Git/GitHub</li>
+                <li>Basic SQL</li>
+                <li>Python</li>
+                <li>System Analysis &amp; Design</li>
+                <li>Leadership</li>
+                <li>Teamwork</li>
+                <li>Communication</li>
+              </ul>
+            </details>
+          </article>
+        </div>
+        <p class="content-note">
+          <span aria-hidden="true">✳</span> These are project assignments, not a
+          ranking of individual abilities. Select each member's row to view
+          their additional skills.
+        </p>
+      </section>
+      <section class="design-section">
+        <div class="page-shell section-pad">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">OUR DESIGN TOOLKIT</p>
+              <h2>Art meets intention.</h2>
+            </div>
+            <p>
+              Select a term to see its description. Choose another term to
+              replace it, or follow the source link to learn more.
+            </p>
           </div>
-          <div class="design-description" id="principles-description" aria-live="polite"><p><em data-term-description>Select a principle above to read its description.</em></p><a data-term-source href="https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html" target="_blank" rel="noopener noreferrer" hidden>Study source ↗</a></div>
-        </article>
+          <div class="design-columns">
+            <article class="design-panel art-elements">
+              <p class="eyebrow">ELEMENTS OF ART</p>
+              <h3>What we work with.</h3>
+              <div class="design-token-grid">
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="elements-description"
+                  data-description="A mark or path that can vary in direction, length, and thickness, and can guide the viewer's eye through a composition."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#line"
+                >
+                  Line
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="elements-description"
+                  data-description="An element of art described by hue, value (lightness or darkness), and intensity (brightness or dullness)."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#color"
+                >
+                  Color
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="elements-description"
+                  data-description="The actual or suggested surface quality of an object, such as smooth, rough, soft, or hard."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#texture"
+                >
+                  Texture
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="elements-description"
+                  data-description="The area within, around, and between objects; artists use positive and negative space to shape a composition and suggest depth."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#space"
+                >
+                  Space
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="elements-description"
+                  data-description="Shape has height and width; form adds depth, making an object appear or exist in three dimensions."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#shape_and_form"
+                >
+                  Form &amp; shape
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="elements-description"
+                  data-description="A way of representing depth and distance on a flat surface, helping a two-dimensional image suggest three-dimensional space."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html#space"
+                >
+                  Perspective
+                </button>
+              </div>
+              <div
+                class="design-description"
+                id="elements-description"
+                aria-live="polite"
+              >
+                <p>
+                  <em data-term-description
+                    >Select an element above to read its description.</em
+                  >
+                </p>
+                <a
+                  data-term-source
+                  href="https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  hidden
+                  >Study source ↗</a
+                >
+              </div>
+            </article>
+            <article class="design-panel design-principles">
+              <p class="eyebrow">PRINCIPLES OF DESIGN</p>
+              <h3>How we bring it together.</h3>
+              <div class="design-token-grid">
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="principles-description"
+                  data-description="The distribution of visual weight in a composition, helping it feel stable or intentionally dynamic."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html#balance"
+                >
+                  Balance
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="principles-description"
+                  data-description="A visual beat created by repeating or varying elements, which can lead the viewer's eye through a work."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf"
+                >
+                  Rhythm
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="principles-description"
+                  data-description="The area that attracts attention, often made prominent through contrast in size, color, shape, or position."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html#emphasis"
+                >
+                  Emphasis
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="principles-description"
+                  data-description="A sense of unity created when visual elements relate well and feel like parts of the same composition."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf"
+                >
+                  Harmony
+                </button>
+                <button
+                  class="design-term"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls="principles-description"
+                  data-description="The relative size of parts in relation to one another and to the whole composition."
+                  data-source="https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf"
+                >
+                  Proportion
+                </button>
+              </div>
+              <div
+                class="design-description"
+                id="principles-description"
+                aria-live="polite"
+              >
+                <p>
+                  <em data-term-description
+                    >Select a principle above to read its description.</em
+                  >
+                </p>
+                <a
+                  data-term-source
+                  href="https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  hidden
+                  >Study source ↗</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="page-shell footer-main">
+        <a class="footer-brand" href="index.html"
+          >Five Different<br />Stories<span>.</span></a
+        >
+        <p>Five students, different talents,<br />one shared journey.</p>
+        <div class="footer-links">
+          <a href="AboutUs.html">About us</a><a href="ContactUs.html">Contact</a
+          ><a href="Members.html">Our members</a>
+        </div>
       </div>
-    </div></section>
-  </main>
-  <footer class="site-footer"><div class="page-shell footer-main"><a class="footer-brand" href="index.html">Five Different<br>Stories<span>.</span></a><p>Five students, different talents,<br>one shared journey.</p><div class="footer-links"><a href="AboutUs.html">About us</a><a href="ContactUs.html">Contact</a><a href="Members.html">Our members</a></div></div><div class="page-shell footer-bottom"><span>GROUP 2 · RVA SUMMATIVE ASSESSMENT 2</span><span>© <span data-year>2026</span> Five Different Stories</span></div></footer>
-</body>
+      <div class="page-shell footer-bottom">
+        <span>GROUP 2 · RVA SUMMATIVE ASSESSMENT 2</span
+        ><span>© <span data-year>2026</span> Five Different Stories</span>
+      </div>
+    </footer>
+  </body>
 </html>

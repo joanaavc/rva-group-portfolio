@@ -76,9 +76,11 @@ if (
 
   contactSubmit.disabled = false;
 
-  contactModal.querySelectorAll("[data-contact-modal-close]").forEach((closeButton) => {
-    closeButton.addEventListener("click", () => contactModal.close());
-  });
+  contactModal
+    .querySelectorAll("[data-contact-modal-close]")
+    .forEach((closeButton) => {
+      closeButton.addEventListener("click", () => contactModal.close());
+    });
 
   contactModal.addEventListener("click", (event) => {
     if (event.target === contactModal) {
@@ -87,4 +89,86 @@ if (
   });
 
   contactModal.addEventListener("close", () => contactSubmit.focus());
+}
+
+const artworkGallery = document.querySelector(".individual-works");
+const artworkLightbox = document.querySelector("[data-artwork-lightbox]");
+const artworkLightboxImage = artworkLightbox?.querySelector(
+  "[data-artwork-lightbox-image]",
+);
+const artworkLightboxTitle = artworkLightbox?.querySelector(
+  "[data-artwork-lightbox-title]",
+);
+const artworkLightboxClose = artworkLightbox?.querySelector(
+  "[data-artwork-lightbox-close]",
+);
+
+if (
+  artworkGallery &&
+  artworkLightbox instanceof HTMLDialogElement &&
+  artworkLightboxImage instanceof HTMLImageElement &&
+  artworkLightboxTitle instanceof HTMLElement &&
+  artworkLightboxClose instanceof HTMLButtonElement
+) {
+  const artworkImages = artworkGallery.querySelectorAll(".artwork-image img");
+  let activeArtworkImage = null;
+
+  const openArtwork = (image) => {
+    activeArtworkImage = image;
+    artworkLightboxImage.src = image.currentSrc || image.src;
+    artworkLightboxImage.alt = image.alt;
+    const caption = image.closest("figure")?.querySelector("figcaption");
+    artworkLightboxTitle.textContent =
+      caption?.querySelector(".artwork-title")?.textContent?.trim() ||
+      caption?.textContent?.trim() ||
+      image.alt;
+    artworkLightbox.showModal();
+  };
+
+  artworkImages.forEach((image) => {
+    image.classList.add("is-expandable-artwork");
+    image.tabIndex = 0;
+    image.setAttribute("role", "button");
+    image.setAttribute("aria-label", `View ${image.alt} full size`);
+  });
+
+  artworkGallery.addEventListener("click", (event) => {
+    if (
+      event.target instanceof HTMLImageElement &&
+      event.target.matches(".artwork-image img")
+    ) {
+      openArtwork(event.target);
+    }
+  });
+
+  artworkGallery.addEventListener("keydown", (event) => {
+    if (
+      !(event.target instanceof HTMLImageElement) ||
+      (event.key !== "Enter" && event.key !== " ")
+    ) {
+      return;
+    }
+
+    event.preventDefault();
+    openArtwork(event.target);
+  });
+
+  artworkLightboxClose.addEventListener("click", () => artworkLightbox.close());
+
+  artworkLightbox.addEventListener("click", (event) => {
+    if (
+      event.target === artworkLightbox ||
+      event.target === artworkLightboxImage
+    ) {
+      artworkLightbox.close();
+    }
+  });
+
+  artworkLightbox.addEventListener("close", () => {
+    if (activeArtworkImage?.isConnected) {
+      activeArtworkImage.focus();
+    }
+
+    activeArtworkImage = null;
+  });
 }
