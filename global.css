@@ -1916,6 +1916,13 @@ h3 {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.member-email {
+  margin: 5px 0 0;
+  color: #a36536;
+  font-size: 11px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
 .member-contact .contact-progress {
   margin: 0;
   color: var(--muted);
