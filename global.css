@@ -345,6 +345,14 @@ h3 {
   font-size: 10px;
   font-weight: 600;
   white-space: nowrap;
+  color: var(--navy);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.story-chip:hover,
+.story-chip:focus-visible {
+  box-shadow: 0 8px 24px rgba(23, 43, 77, 0.18);
+  transform: translateY(-2px);
 }
 .chip-number {
   width: 25px;
@@ -601,6 +609,37 @@ h3 {
 }
 .member-card {
   background: var(--paper);
+  scroll-margin-top: 24px;
+}
+.member-joana {
+  --member-glow: rgba(172, 201, 218, 0.82);
+}
+.member-whendelyn {
+  --member-glow: rgba(224, 192, 151, 0.82);
+}
+.member-kate {
+  --member-glow: rgba(219, 186, 181, 0.82);
+}
+.member-julie {
+  --member-glow: rgba(202, 210, 182, 0.82);
+}
+.member-ryan {
+  --member-glow: rgba(174, 202, 191, 0.82);
+}
+.member-card.is-highlighted {
+  animation: member-card-glow 1.5s ease-out;
+}
+@keyframes member-card-glow {
+  0%,
+  100% {
+    box-shadow: 0 6px 18px rgba(23, 43, 77, 0.06);
+  }
+  12%,
+  72% {
+    box-shadow:
+      0 0 0 3px var(--member-glow),
+      0 0 22px 4px var(--member-glow);
+  }
 }
 .member-art {
   min-height: 210px;
@@ -1182,7 +1221,7 @@ h3 {
 .artist-gallery--julie .artwork-card,
 .artist-gallery--kate .artwork-card,
 .artist-gallery--whendelyn .artwork-card,
-.artist-gallery--whendelyn .artwork-document {
+.artist-gallery--whendelyn .artwork-document-preview {
   max-width: none;
 }
 .artist-gallery--julie .artwork-card:nth-child(1),
@@ -1217,7 +1256,7 @@ h3 {
 .artist-gallery--whendelyn .artwork-card:nth-child(3) {
   grid-area: triptych;
 }
-.artist-gallery--whendelyn .artwork-document {
+.artist-gallery--whendelyn .artwork-document-preview {
   grid-area: pdf;
   min-height: 0;
 }
@@ -1339,46 +1378,45 @@ h3 {
   font-style: normal;
   font-weight: 500;
 }
-.artwork-document {
+.artwork-document-preview {
+  min-width: 0;
   min-height: 260px;
   max-width: 260px;
   flex: 1 1 220px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 13px;
-  padding: 22px;
+  overflow: hidden;
   border-radius: 8px;
   background: var(--navy);
   box-shadow: 0 5px 16px rgba(23, 43, 77, 0.1);
-  color: white;
-  text-decoration: none;
 }
-.artwork-document:hover {
+.artwork-document-preview iframe {
+  width: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+  border: 0;
+  background: var(--paper);
+}
+.artwork-document-expand {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 0;
+  background: var(--navy);
+  color: white;
+  font: 600 12px var(--body);
+  text-align: left;
+  cursor: pointer;
+}
+.artwork-document-expand:hover {
   background: var(--navy-deep);
 }
-.artwork-document:focus-visible {
+.artwork-document-expand:focus-visible {
   outline: 3px solid var(--orange);
   outline-offset: 3px;
-}
-.artwork-document-icon {
-  display: grid;
-  width: 40px;
-  height: 40px;
-  place-items: center;
-  background: var(--orange-light);
-  color: var(--navy);
-  font-size: 10px;
-  font-weight: 800;
-}
-.artwork-document strong {
-  font: 600 17px/1.35 var(--display);
-}
-.artwork-document small {
-  color: #c7d0db;
-  font-size: 10px;
-  font-weight: 700;
 }
 .group-work {
   padding: 64px 0 28px;
@@ -1504,6 +1542,16 @@ h3 {
   background: var(--paper);
   object-fit: contain;
   cursor: zoom-out;
+}
+.document-lightbox-frame {
+  width: 100%;
+  height: 100%;
+}
+.document-lightbox-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: var(--paper);
 }
 .artwork-lightbox-close {
   position: absolute;
@@ -2221,7 +2269,7 @@ h3 {
     gap: 10px;
   }
   .artwork-card,
-  .artwork-document {
+  .artwork-document-preview {
     max-width: none;
     flex: 0 1 calc(50% - 5px);
   }
@@ -2237,7 +2285,7 @@ h3 {
   .artist-gallery--julie .artwork-card:nth-child(n),
   .artist-gallery--kate .artwork-card:nth-child(n),
   .artist-gallery--whendelyn .artwork-card:nth-child(n),
-  .artist-gallery--whendelyn .artwork-document {
+  .artist-gallery--whendelyn .artwork-document-preview {
     grid-area: auto;
   }
   .artwork-card--portrait {
@@ -2254,12 +2302,8 @@ h3 {
     padding: 10px;
     font-size: 10px;
   }
-  .artwork-document {
-    min-height: 190px;
-    padding: 15px;
-  }
-  .artwork-document strong {
-    font-size: 14px;
+  .artwork-document-preview {
+    min-height: 300px;
   }
   .section-heading > p {
     font-size: 12px;

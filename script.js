@@ -7,6 +7,17 @@ if (currentLink) {
   currentLink.setAttribute("aria-current", "page");
 }
 
+const highlightedMember = document.getElementById(
+  window.location.hash.slice(1),
+);
+
+if (highlightedMember?.classList.contains("member-card")) {
+  highlightedMember.classList.add("is-highlighted");
+  window.setTimeout(() => {
+    highlightedMember.classList.remove("is-highlighted");
+  }, 1500);
+}
+
 document.querySelectorAll("[data-year]").forEach((year) => {
   year.textContent = new Date().getFullYear();
 });
@@ -170,5 +181,49 @@ if (
     }
 
     activeArtworkImage = null;
+  });
+}
+
+const documentPreviewOpen = document.querySelector(
+  "[data-document-preview-open]",
+);
+const documentLightbox = document.querySelector("[data-document-lightbox]");
+const documentLightboxFrame = documentLightbox?.querySelector(
+  "[data-document-preview-frame]",
+);
+const documentPreviewClose = documentLightbox?.querySelector(
+  "[data-document-preview-close]",
+);
+
+if (
+  documentPreviewOpen instanceof HTMLButtonElement &&
+  documentLightbox instanceof HTMLDialogElement &&
+  documentLightboxFrame instanceof HTMLIFrameElement &&
+  documentPreviewClose instanceof HTMLButtonElement
+) {
+  documentPreviewOpen.addEventListener("click", () => {
+    const fullSizeSource = documentPreviewOpen.dataset.fullSrc;
+
+    if (!fullSizeSource) {
+      return;
+    }
+
+    documentLightboxFrame.src = fullSizeSource;
+    documentLightbox.showModal();
+  });
+
+  documentPreviewClose.addEventListener("click", () => {
+    documentLightbox.close();
+  });
+
+  documentLightbox.addEventListener("click", (event) => {
+    if (event.target === documentLightbox) {
+      documentLightbox.close();
+    }
+  });
+
+  documentLightbox.addEventListener("close", () => {
+    documentLightboxFrame.removeAttribute("src");
+    documentPreviewOpen.focus();
   });
 }

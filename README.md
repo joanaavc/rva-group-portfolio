@@ -13,9 +13,9 @@ Open `index.html` in a browser to explore the site. It uses plain HTML, CSS, and
 - **Home** (`index.html`): Introduces the team and links to the main sections.
 - **Members** (`Members.html`): Shows each member's project role and portfolio link.
 - **Skills** (`Skills.html`): Summarizes team contributions and provides an interactive glossary of art elements and design principles.
-- **Works** (`works.html`): Embeds the group presentation, the BarberQ and website Figma prototypes, and individual artwork galleries with a click-to-enlarge viewer.
+- **Works** (`works.html`): Embeds the group presentation and Figma prototypes, previews a project PDF in-page, and displays individual artwork galleries with a click-to-enlarge viewer.
 - **About** (`AboutUs.html`): Explains the idea behind the team name and summarizes the project journey.
-- **Contact** (`ContactUs.html`): Includes a required-field message form with a local confirmation modal, plus the members' public social profiles and email links. The static form does not send or store submissions.
+- **Contact** (`ContactUs.html`): Includes a required-field form with a confirmation modal, plus the members' public social profiles and email links. The form is front-end only and does not deliver or store submissions.
 
 ## Project files
 
