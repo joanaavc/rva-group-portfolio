@@ -2,7 +2,7 @@
 
 > Five students, different talents, one shared journey.
 
-A responsive student portfolio created by Group 2 for the RVA Summative Assessment 2 digital interface design project. The site introduces our team, explains our project roles and design ideas, and brings our group projects and individual artworks together.
+A responsive student portfolio created by Group 3 for the RVA Summative Assessment 2 digital interface design project. The site introduces our team, explains our project roles and design ideas, and brings our group projects and individual artworks together.
 
 ## Preview
 
